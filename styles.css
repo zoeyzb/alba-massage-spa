@@ -946,3 +946,12 @@ html.reduce-motion .reveal { opacity: 1 !important; transform: none !important; 
 .stone-mist--two { opacity: .92 !important; animation-delay: -6.1s; animation-duration: 8.4s; }
 .stone-mist::before { animation-delay: -3.1s; }
 .stone-mist::after { animation-delay: -5.3s; }
+.stone-mist::before,
+.stone-mist::after {
+  width: 15% !important;
+  background: linear-gradient(to top, rgba(232,240,230,0), rgba(235,242,232,.38) 25%, rgba(244,247,240,.68) 52%, rgba(233,241,231,.28) 76%, rgba(232,240,230,0)) !important;
+  filter: blur(6px) !important;
+}
+.stone-mist::after { left: 48%; opacity: .84; }
+.stone-mist--two::before { left: 68%; }
+.stone-mist--two::after { left: 34%; }
