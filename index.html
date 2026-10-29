@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-subject.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/interior.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -61,67 +61,69 @@
 
       <div class="hero-scene" id="heroScene" aria-hidden="true">
         <div class="hero-layer hero-layer--background"></div>
-        <img class="hero-layer hero-layer--subject" src="assets/hero-subject.jpg" alt="" fetchpriority="high" decoding="async">
-        <svg class="hero-layer hero-layer--glass" viewBox="0 0 820 900" preserveAspectRatio="none">
+        <img class="hero-layer hero-layer--subject" src="assets/interior.jpg" alt="" fetchpriority="high" decoding="async">
+        <svg class="hero-layer hero-layer--glass" viewBox="0 0 820 900" preserveAspectRatio="none" aria-hidden="true">
           <defs>
-            <linearGradient id="goldMetal" x1="0" y1="0" x2="1" y2="0.18">
-              <stop offset="0" stop-color="#4b2910"/>
-              <stop offset=".12" stop-color="#a76524"/>
-              <stop offset=".23" stop-color="#f4c46c"/>
-              <stop offset=".31" stop-color="#fff0bd"/>
-              <stop offset=".39" stop-color="#bd772a"/>
-              <stop offset=".53" stop-color="#f8d78e"/>
-              <stop offset=".62" stop-color="#e4a344"/>
-              <stop offset=".75" stop-color="#78431b"/>
-              <stop offset=".86" stop-color="#f4c76f"/>
-              <stop offset="1" stop-color="#5a3217"/>
+            <linearGradient id="silkGold" x1="0" y1="0" x2="1" y2=".12">
+              <stop offset="0" stop-color="#a66b2c" stop-opacity=".16"/>
+              <stop offset=".18" stop-color="#f5cb81" stop-opacity=".72"/>
+              <stop offset=".31" stop-color="#fff0c7" stop-opacity=".82"/>
+              <stop offset=".43" stop-color="#b77a37" stop-opacity=".62"/>
+              <stop offset=".58" stop-color="#f3d49a" stop-opacity=".76"/>
+              <stop offset=".75" stop-color="#d99542" stop-opacity=".52"/>
+              <stop offset=".9" stop-color="#fff0c3" stop-opacity=".72"/>
+              <stop offset="1" stop-color="#a36a30" stop-opacity=".12"/>
             </linearGradient>
-            <linearGradient id="goldEdge" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#f8df9d" stop-opacity=".2"/>
-              <stop offset=".22" stop-color="#fff4cf" stop-opacity=".9"/>
-              <stop offset=".45" stop-color="#fffdf0" stop-opacity=".5"/>
-              <stop offset=".72" stop-color="#ffe7a4" stop-opacity=".95"/>
-              <stop offset="1" stop-color="#f3bd63" stop-opacity=".2"/>
+            <linearGradient id="silkFold" x1="0" y1="0" x2="1" y2=".1">
+              <stop offset="0" stop-color="#fff6d7" stop-opacity=".06"/>
+              <stop offset=".3" stop-color="#fff5d9" stop-opacity=".82"/>
+              <stop offset=".55" stop-color="#ffe0a2" stop-opacity=".18"/>
+              <stop offset=".78" stop-color="#fff6d9" stop-opacity=".66"/>
+              <stop offset="1" stop-color="#fff0c3" stop-opacity=".08"/>
             </linearGradient>
-            <filter id="archGlow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="9"/>
-            </filter>
-            <filter id="archShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <filter id="silkShadow" x="-20%" y="-20%" width="140%" height="140%">
               <feGaussianBlur stdDeviation="5"/>
             </filter>
           </defs>
-          <path d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#f3b653" stroke-width="55" stroke-linecap="round" opacity=".24" filter="url(#archGlow)"/>
-          <path d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#150e08" stroke-width="54" stroke-linecap="round" opacity=".8" filter="url(#archShadow)" transform="translate(2 9)"/>
-          <path class="golden-arch-body" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="url(#goldMetal)" stroke-width="42" stroke-linecap="round"/>
-          <path d="M74 736 C39 460 111 150 337 91 C541 36 744 182 757 437 C766 550 735 650 696 728" fill="none" stroke="#4e2c12" stroke-width="2.5" stroke-linecap="round" opacity=".8"/>
-          <path d="M69 731 C37 455 107 148 333 88 C538 33 739 179 752 433 C761 548 731 646 691 723" fill="none" stroke="url(#goldEdge)" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
-          <path class="golden-arch-glint" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#fff3c5" stroke-width="5" stroke-linecap="round" stroke-dasharray="78 1500" opacity=".92"/>
-          <path class="golden-arch-glint golden-arch-glint--fine" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#fff8e0" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="24 1550" opacity=".75"/>
+          <g class="golden-claw">
+            <path class="silk-shadow" d="M 780 -35 C 655 70 664 177 746 270 C 823 357 808 463 720 558 C 650 633 672 745 790 852" fill="none" stroke="#100d08" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="silk-ribbon" d="M 780 -35 C 655 70 664 177 746 270 C 823 357 808 463 720 558 C 650 633 672 745 790 852" fill="none" stroke="url(#silkGold)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="silk-fold" d="M 775 -28 C 664 75 672 176 752 265 C 824 351 806 455 713 550 C 650 618 674 739 784 846" fill="none" stroke="url(#silkFold)" stroke-width="2.2" stroke-linecap="round"/>
+            <path class="silk-glint" d="M 780 -35 C 655 70 664 177 746 270 C 823 357 808 463 720 558 C 650 633 672 745 790 852" fill="none" stroke="#fff7d8" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="75 1600"/>
+          </g>
         </svg>
-          <div class="hero-layer hero-layer--stones">
-          <span class="stone stone-one"></span>
-          <span class="stone stone-two"></span>
-          <span class="stone stone-three"></span>
-          <span class="stone stone-four"></span>
-          <span class="stone-mist stone-mist--one" aria-hidden="true"></span>
-          <span class="stone-mist stone-mist--two" aria-hidden="true"></span>
+        <div class="stone-detail" aria-hidden="true">
+          <img src="assets/interior.jpg" alt="" loading="eager" decoding="async">
+          <span class="stone-mist stone-mist--one"></span>
+          <span class="stone-mist stone-mist--two"></span>
+          <span class="stone-detail-label">HOT STONE RITUAL</span>
         </div>
-        <span class="hero-orbit"></span>
-        <span class="hero-scene-note">01 / A ritual for returning</span>
       </div>
     </section>
 
     <div class="trust-strip" aria-label="The ALBA approach">
-      <span><i aria-hidden="true">✳</i> Therapists who listen</span>
-      <span><i aria-hidden="true">⌁</i> Pressure tailored to you</span>
-      <span><i aria-hidden="true">◌</i> Private, peaceful rooms</span>
-      <span><i aria-hidden="true">✧</i> Time that is truly yours</span>
+      <span class="trust-item">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.1-7-9a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 4.9-7 9-7 9Z"/><path d="M12 8v7"/></svg></i>
+        <span class="trust-copy"><b>Therapists who listen</b><small>Your needs guide the session</small></span>
+      </span>
+      <span class="trust-item">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round"><path d="M4 7h6m4 0h6M4 17h3m4 0h9"/><path d="M10 4v6m1 4v6"/></svg></i>
+        <span class="trust-copy"><b>Care tailored to you</b><small>Pressure and pace, your call</small></span>
+      </span>
+      <span class="trust-item">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M14 12h.01M8 7h4"/></svg></i>
+        <span class="trust-copy"><b>Private, peaceful rooms</b><small>A calm, discreet setting</small></span>
+      </span>
+      <span class="trust-item">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></i>
+        <span class="trust-copy"><b>Time set aside</b><small>Space to slow down</small></span>
+      </span>
     </div>
 
     <section class="experience section" id="experience">
       <div class="experience-grid wrap">
         <figure class="experience-photo reveal">
-          <img src="assets/hero.jpg" alt="Massage oil being gently applied to a guest’s back" loading="lazy">
+          <img src="assets/hero-subject.jpg" alt="A guest receiving a back massage" loading="lazy">
           <figcaption>Care that starts with listening.</figcaption>
         </figure>
         <div class="experience-copy reveal">
@@ -148,7 +150,7 @@
         </div>
         <div class="service-grid">
           <article class="service-card reveal">
-            <div class="service-image"><img src="assets/light.jpg" alt="A therapist using steady, attentive pressure during a back massage" loading="lazy"><span class="service-number">01 / BODY</span></div>
+            <div class="service-image"><img src="assets/hero.jpg" alt="A therapist applying massage oil during a back treatment" loading="lazy"><span class="service-number">01 / BODY</span></div>
             <div class="service-copy">
               <h3>Massage</h3>
               <p>Tailored bodywork, from gentle release to deeper pressure.</p>
@@ -199,7 +201,7 @@
         </div>
         <div class="ritual-grid">
           <article class="ritual-card reveal">
-            <div class="ritual-image"><img src="assets/hero.jpg" alt="A massage oil treatment prepared with a warm towel" loading="lazy"><span>01 / UNWIND</span></div>
+            <div class="ritual-image"><img src="assets/hero-subject.jpg" alt="A guest resting during a massage treatment" loading="lazy"><span>01 / UNWIND</span></div>
             <div class="ritual-content">
               <div class="ritual-title"><h3>Restore</h3></div>
               <p class="ritual-duration">90 minutes · Body &amp; mind</p>
@@ -208,7 +210,7 @@
             </div>
           </article>
           <article class="ritual-card reveal">
-            <div class="ritual-image"><img src="assets/facial.jpg" alt="A facial treatment prepared with warm towels" loading="lazy"><span>02 / SIGNATURE</span></div>
+            <div class="ritual-image"><img src="assets/light.jpg" alt="A guest receiving a focused facial treatment" loading="lazy"><span>02 / SIGNATURE</span></div>
             <div class="ritual-content">
               <div class="ritual-title"><h3>The ALBA Ritual</h3></div>
               <p class="ritual-duration">150 minutes · Full escape</p>
@@ -279,7 +281,7 @@
     <section class="booking" id="book">
       <div class="booking-grid">
         <div class="booking-art">
-          <img src="assets/massage.jpg" alt="A peaceful massage treatment setting" loading="lazy">
+          <img src="assets/hero-subject.jpg" alt="A guest resting during a massage treatment" loading="lazy">
           <div class="booking-art-copy">
             <p class="eyebrow">A soft place to start</p>
             <h2>Your next hour<br><em>is yours.</em></h2>

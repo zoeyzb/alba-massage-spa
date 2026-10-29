@@ -31,20 +31,35 @@ async function openPage(width = 1280, height = 800, reducedMotion = false) {
   return page;
 }
 
-test('hero is layered and includes a moving gold arch plus rising stone mist', async () => {
+test('hero has a real guest photo, moving silk sculpture, rising steam, and one trust strip', async () => {
   const page = await openPage();
   const layers = await page.evaluate(() => [
     '.hero-layer--background',
     '.hero-layer--subject',
     '.hero-layer--glass',
-    '.hero-layer--stones',
-    '.golden-arch-glint',
+    '.golden-claw',
+    '.silk-glint',
     '.stone-mist',
-    '.hero-orbit',
     '.trust-strip'
   ].map(selector => Boolean(document.querySelector(selector))));
   await page.close();
-  assert.deepEqual(layers, Array(8).fill(true), 'the hero needs distinct depth layers, gold shimmer, smoke, and the first-screen trust strip');
+  assert.deepEqual(layers, Array(7).fill(true), 'the hero needs real photography, a moving sculptural gold claw, rising steam, and the first-screen trust strip');
+});
+
+test('hero uses real guest and hot-stone photography instead of synthetic stones', async () => {
+  const page = await openPage();
+  const state = await page.evaluate(() => ({
+    image: document.querySelector('.hero-layer--subject').getAttribute('src'),
+    fakeStones: document.querySelectorAll('.stone').length,
+    trustStripCount: document.querySelectorAll('.trust-strip').length,
+    trustStripImmediatelyAfterHero: document.querySelector('.hero').nextElementSibling?.classList.contains('trust-strip')
+  }));
+  assert.equal(state.image, 'assets/interior.jpg');
+  assert.equal(await page.$eval('.stone-detail img', el => el.getAttribute('src')), 'assets/interior.jpg');
+  await page.close();
+  assert.equal(state.fakeStones, 0);
+  assert.equal(state.trustStripCount, 1);
+  assert.equal(state.trustStripImmediatelyAfterHero, true);
 });
 
 test('brand palette is emerald and champagne with no animation CDN dependency', async () => {
@@ -177,7 +192,7 @@ test('reduced-motion preference disables continuous hero movement', async () => 
   const state = await page.evaluate(() => ({
     reduced: matchMedia('(prefers-reduced-motion: reduce)').matches,
     motionClass: document.documentElement.classList.contains('reduce-motion'),
-    archAnimation: getComputedStyle(document.querySelector('.golden-arch-glint')).animationDuration,
+    archAnimation: getComputedStyle(document.querySelector('.silk-glint')).animationDuration,
     smokeAnimation: getComputedStyle(document.querySelector('.stone-mist')).animationName
   }));
   await page.close();

@@ -65,8 +65,7 @@
     const depths = new Map([
       ['.hero-layer--background', -5],
       ['.hero-layer--subject', -12],
-      ['.hero-layer--glass', 12],
-      ['.hero-layer--stones', -21]
+      ['.hero-layer--glass', 12]
     ]);
     const layers = [...depths.entries()].map(([selector, depth]) => [heroScene.querySelector(selector), depth]).filter(([element]) => element);
 
