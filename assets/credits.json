@@ -1,0 +1,76 @@
+{
+  "note": "All images are illustrative stock photography, not actual ALBA premises, staff, or guests. Images are stored locally so the site does not depend on third-party image APIs at runtime.",
+  "licenses": {
+    "unsplash": "https://unsplash.com/license",
+    "pexels": "https://www.pexels.com/license/"
+  },
+  "photos": [
+    {
+      "file": "hero-subject.jpg",
+      "source": "Pexels",
+      "photo_id": "4599400",
+      "url": "https://images.pexels.com/photos/4599400/pexels-photo-4599400.jpeg?auto=compress&cs=tinysrgb&w=2200",
+      "use": "Hero / guest receiving massage",
+      "photographer": "Antoni Shkraba Studio"
+    },
+    {
+      "file": "hero.jpg",
+      "source": "Unsplash",
+      "photo_id": "1544161515-4ab6ce6db874",
+      "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874",
+      "use": "Massage oil detail / experience and Restore ritual"
+    },
+    {
+      "file": "interior.jpg",
+      "source": "Unsplash",
+      "photo_id": "1600334089648-b0d9d3028eb2",
+      "url": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
+      "use": "Hot-stone ritual"
+    },
+    {
+      "file": "massage.jpg",
+      "source": "Unsplash",
+      "photo_id": "1540555700478-4be289fbecef",
+      "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef",
+      "use": "Treatment linen and floral detail"
+    },
+    {
+      "file": "facial.jpg",
+      "source": "Unsplash",
+      "photo_id": "1570172619644-dfd03ed5d881",
+      "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881",
+      "use": "Facial treatment"
+    },
+    {
+      "file": "light.jpg",
+      "source": "Unsplash",
+      "photo_id": "1552693673-1bf958298935",
+      "url": "https://images.unsplash.com/photo-1552693673-1bf958298935",
+      "use": "Massage / bodywork detail"
+    },
+    {
+      "file": "red-light.jpg",
+      "source": "Pexels",
+      "photo_id": "36453194",
+      "photographer": "Taiye Salawu",
+      "url": "https://images.pexels.com/photos/36453194/pexels-photo-36453194.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "use": "Red LED light therapy"
+    },
+    {
+      "file": "couples.jpg",
+      "source": "Pexels",
+      "photo_id": "7365434",
+      "photographer": "Sergey Torbik",
+      "url": "https://images.pexels.com/photos/7365434/pexels-photo-7365434.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "use": "Couples Retreat"
+    },
+    {
+      "file": "spa-room.jpg",
+      "source": "Pexels",
+      "photo_id": "16571736",
+      "photographer": "Zandatsu",
+      "url": "https://images.pexels.com/photos/16571736/pexels-photo-16571736.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "use": "Spa welcome / reception"
+    }
+  ]
+}

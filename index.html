@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071c18">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="description" content="Thoughtful massage, skin rituals and restorative treatments in a quieter, more personal spa setting.">
+  <title>ALBA — Massage & Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-subject.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="brand" href="#top" aria-label="ALBA Massage and Wellness home">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span class="brand-word">ALBA<small>MASSAGE &amp; WELLNESS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#services">Treatments</a>
+      <a href="#rituals">Rituals</a>
+      <a href="#space">Our space</a>
+      <a href="#faq">Good to know</a>
+    </nav>
+    <a class="header-cta" href="#book">Plan a visit <span aria-hidden="true">↗</span></a>
+    <button class="burger" id="burger" type="button" aria-label="Open navigation" aria-controls="mobileNav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true" inert>
+    <a href="#services">Treatments <span>01</span></a>
+    <a href="#rituals">Signature rituals <span>02</span></a>
+    <a href="#space">Our space <span>03</span></a>
+    <a href="#faq">Good to know <span>04</span></a>
+    <a class="mobile-book" href="#book">Plan a visit <span aria-hidden="true">↗</span></a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> A quieter kind of luxury</p>
+        <h1 id="hero-title">Leave the noise.<br><em>Return to yourself.</em></h1>
+        <p class="hero-lede">Restorative massage, considered skin rituals and room to exhale — all thoughtfully paced around you.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Discover your treatment <span aria-hidden="true">↗</span></a>
+          <a class="button-link" href="#space">Explore the space <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-foot">
+          <span>Massage · Skin · Recovery</span>
+          <span>Come as you are. Leave lighter.</span>
+        </div>
+      </div>
+
+      <div class="hero-scene" id="heroScene" aria-hidden="true">
+        <div class="hero-layer hero-layer--background"></div>
+        <img class="hero-layer hero-layer--subject" src="assets/hero-subject.jpg" alt="" fetchpriority="high" decoding="async">
+        <svg class="hero-layer hero-layer--glass" viewBox="0 0 820 900" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="goldMetal" x1="0" y1="0" x2="1" y2="0.18">
+              <stop offset="0" stop-color="#4b2910"/>
+              <stop offset=".12" stop-color="#a76524"/>
+              <stop offset=".23" stop-color="#f4c46c"/>
+              <stop offset=".31" stop-color="#fff0bd"/>
+              <stop offset=".39" stop-color="#bd772a"/>
+              <stop offset=".53" stop-color="#f8d78e"/>
+              <stop offset=".62" stop-color="#e4a344"/>
+              <stop offset=".75" stop-color="#78431b"/>
+              <stop offset=".86" stop-color="#f4c76f"/>
+              <stop offset="1" stop-color="#5a3217"/>
+            </linearGradient>
+            <linearGradient id="goldEdge" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#f8df9d" stop-opacity=".2"/>
+              <stop offset=".22" stop-color="#fff4cf" stop-opacity=".9"/>
+              <stop offset=".45" stop-color="#fffdf0" stop-opacity=".5"/>
+              <stop offset=".72" stop-color="#ffe7a4" stop-opacity=".95"/>
+              <stop offset="1" stop-color="#f3bd63" stop-opacity=".2"/>
+            </linearGradient>
+            <filter id="archGlow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="9"/>
+            </filter>
+            <filter id="archShadow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+          </defs>
+          <path d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#f3b653" stroke-width="55" stroke-linecap="round" opacity=".24" filter="url(#archGlow)"/>
+          <path d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#150e08" stroke-width="54" stroke-linecap="round" opacity=".8" filter="url(#archShadow)" transform="translate(2 9)"/>
+          <path class="golden-arch-body" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="url(#goldMetal)" stroke-width="42" stroke-linecap="round"/>
+          <path d="M74 736 C39 460 111 150 337 91 C541 36 744 182 757 437 C766 550 735 650 696 728" fill="none" stroke="#4e2c12" stroke-width="2.5" stroke-linecap="round" opacity=".8"/>
+          <path d="M69 731 C37 455 107 148 333 88 C538 33 739 179 752 433 C761 548 731 646 691 723" fill="none" stroke="url(#goldEdge)" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
+          <path class="golden-arch-glint" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#fff3c5" stroke-width="5" stroke-linecap="round" stroke-dasharray="78 1500" opacity=".92"/>
+          <path class="golden-arch-glint golden-arch-glint--fine" d="M72 740 C30 460 104 143 335 82 C543 27 752 173 768 438 C780 557 745 657 704 737" fill="none" stroke="#fff8e0" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="24 1550" opacity=".75"/>
+        </svg>
+          <div class="hero-layer hero-layer--stones">
+          <span class="stone stone-one"></span>
+          <span class="stone stone-two"></span>
+          <span class="stone stone-three"></span>
+          <span class="stone stone-four"></span>
+          <span class="stone-mist stone-mist--one" aria-hidden="true"></span>
+          <span class="stone-mist stone-mist--two" aria-hidden="true"></span>
+        </div>
+        <span class="hero-orbit"></span>
+        <span class="hero-scene-note">01 / A ritual for returning</span>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="The ALBA approach">
+      <span><i aria-hidden="true">✳</i> Therapists who listen</span>
+      <span><i aria-hidden="true">⌁</i> Pressure tailored to you</span>
+      <span><i aria-hidden="true">◌</i> Private, peaceful rooms</span>
+      <span><i aria-hidden="true">✧</i> Time that is truly yours</span>
+    </div>
+
+    <section class="experience section" id="experience">
+      <div class="experience-grid wrap">
+        <figure class="experience-photo reveal">
+          <img src="assets/hero.jpg" alt="Massage oil being gently applied to a guest’s back" loading="lazy">
+          <figcaption>Care that starts with listening.</figcaption>
+        </figure>
+        <div class="experience-copy reveal">
+          <p class="eyebrow">Care begins with listening</p>
+          <h2>Nothing rushed.<br><em>Nothing one-size-fits-all.</em></h2>
+          <p>Tell us what feels good, what feels tender, and what you need from the hour. We shape the treatment around you.</p>
+          <div class="experience-points">
+            <span>01 <b>Private rooms</b></span>
+            <span>02 <b>Thoughtful pressure</b></span>
+            <span>03 <b>Space to settle</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">The treatment menu</p>
+            <h2>Find your <em>reset.</em></h2>
+          </div>
+          <p>Choose a starting point. We’ll help with the rest.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-image"><img src="assets/light.jpg" alt="A therapist using steady, attentive pressure during a back massage" loading="lazy"><span class="service-number">01 / BODY</span></div>
+            <div class="service-copy">
+              <h3>Massage</h3>
+              <p>Tailored bodywork, from gentle release to deeper pressure.</p>
+              <div class="service-meta"><span>60–90 min</span><b>By enquiry</b></div>
+              <a class="text-link" href="#book" data-treatment="Massage">Ask about massage <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="assets/facial.jpg" alt="Professional facial treatment in a calm room" loading="lazy"><span class="service-number">02 / SKIN</span></div>
+            <div class="service-copy">
+              <h3>Facials</h3>
+              <p>Hydration-focused skin care that never feels overworked.</p>
+              <div class="service-meta"><span>50–80 min</span><b>By enquiry</b></div>
+              <a class="text-link" href="#book" data-treatment="Facials">Find your facial <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="service-card service-card--light reveal">
+            <div class="service-image"><img src="assets/red-light.jpg" alt="A guest receiving a red LED light therapy facial" loading="lazy"><span class="service-number">03 / RECOVERY</span><span class="red-pulse" aria-hidden="true"></span></div>
+            <div class="service-copy">
+              <h3>Red-light ritual</h3>
+              <p>A quiet recovery session in a softly lit treatment room.</p>
+              <div class="service-meta"><span>30 min</span><b>By enquiry</b></div>
+              <a class="text-link" href="#book" data-treatment="Red-light ritual">Explore recovery <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="assets/interior.jpg" alt="Smooth warmed stones placed along a guest’s back during a hot-stone treatment" loading="lazy"><span class="service-number">04 / HEAT</span></div>
+            <div class="service-copy">
+              <h3>Hot-stone ritual</h3>
+              <p>Slow bodywork and warmed stones for a deeply restful reset.</p>
+              <div class="service-meta"><span>45–60 min</span><b>By enquiry</b></div>
+              <a class="text-link" href="#book" data-treatment="Hot-stone ritual">Explore hot stones <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="price-note">Treatment times are indicative. Ask the team to confirm pricing and availability.</p>
+      </div>
+    </section>
+
+    <section class="rituals section" id="rituals">
+      <div class="wrap">
+        <div class="section-heading section-heading-light reveal">
+          <div>
+            <p class="eyebrow">Signature rituals</p>
+            <h2>A little more <em>time.</em></h2>
+          </div>
+          <p>For days when one treatment is not quite enough.</p>
+        </div>
+        <div class="ritual-grid">
+          <article class="ritual-card reveal">
+            <div class="ritual-image"><img src="assets/hero.jpg" alt="A massage oil treatment prepared with a warm towel" loading="lazy"><span>01 / UNWIND</span></div>
+            <div class="ritual-content">
+              <div class="ritual-title"><h3>Restore</h3></div>
+              <p class="ritual-duration">90 minutes · Body &amp; mind</p>
+              <p>A full-body massage with focused scalp and neck work.</p>
+              <a class="text-link" href="#book" data-treatment="Restore">Ask about Restore <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="ritual-card reveal">
+            <div class="ritual-image"><img src="assets/facial.jpg" alt="A facial treatment prepared with warm towels" loading="lazy"><span>02 / SIGNATURE</span></div>
+            <div class="ritual-content">
+              <div class="ritual-title"><h3>The ALBA Ritual</h3></div>
+              <p class="ritual-duration">150 minutes · Full escape</p>
+              <p>A longer visit combining massage, skin care and lounge time.</p>
+              <a class="text-link" href="#book" data-treatment="The ALBA Ritual">Ask about the ritual <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="ritual-card reveal">
+            <div class="ritual-image"><img src="assets/couples.jpg" alt="Two guests enjoying a couples spa experience" loading="lazy"><span>03 / TOGETHER</span></div>
+            <div class="ritual-content">
+              <div class="ritual-title"><h3>Couples Retreat</h3></div>
+              <p class="ritual-duration">150 minutes · For two</p>
+              <p>Side-by-side treatments followed by time to linger together.</p>
+              <a class="text-link" href="#book" data-treatment="Couples Retreat">Plan time for two <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="price-note price-note-light">Ask the team about package details and availability.</p>
+      </div>
+    </section>
+
+    <section class="space section" id="space">
+      <div class="wrap">
+        <div class="section-heading section-heading-light reveal">
+          <div>
+            <p class="eyebrow">The ALBA space</p>
+            <h2>Quiet, by <em>design.</em></h2>
+          </div>
+          <p>Natural textures, private rooms, and details that let the body settle.</p>
+        </div>
+        <div class="space-grid">
+          <figure class="space-photo space-photo-large reveal"><img src="assets/spa-room.jpg" alt="A bright spa reception with comfortable seating and a marble counter" loading="lazy"><figcaption><span>01 / THE WELCOME</span>A softer arrival</figcaption></figure>
+          <figure class="space-photo reveal"><img src="assets/interior.jpg" alt="Warmed stones resting on a guest’s back during a body treatment" loading="lazy"><figcaption><span>02 / THE RITUAL</span>Warmth, held gently</figcaption></figure>
+          <figure class="space-photo reveal"><img src="assets/massage.jpg" alt="Fresh towels, skincare and flowers prepared for a treatment" loading="lazy"><figcaption><span>03 / THE DETAILS</span>Thoughtful little touches</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="faq-grid wrap">
+        <div class="faq-intro reveal">
+          <p class="eyebrow">Before you arrive</p>
+          <h2>Good to <em>know.</em></h2>
+          <p>Still unsure? Send a note and the spa team can help you choose.</p>
+          <a class="text-link" href="#book">Ask a question <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>What should I wear?</summary>
+            <p>Wear whatever feels comfortable. The spa team will share any treatment-specific preparation details when confirming your visit.</p>
+          </details>
+          <details>
+            <summary>Which treatment is right for me?</summary>
+            <p>Choose a starting point above, or select “Help me choose” in the enquiry form and describe what you are looking for.</p>
+          </details>
+          <details>
+            <summary>Can I enquire for two?</summary>
+            <p>Yes. Choose Couples Retreat in the form and mention any timing preferences. Availability is confirmed by the spa team.</p>
+          </details>
+          <details>
+            <summary>Is my appointment confirmed online?</summary>
+            <p>No. The form prepares an email enquiry only. Your visit is not confirmed until you send the email and receive a reply from the spa.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="book">
+      <div class="booking-grid">
+        <div class="booking-art">
+          <img src="assets/massage.jpg" alt="A peaceful massage treatment setting" loading="lazy">
+          <div class="booking-art-copy">
+            <p class="eyebrow">A soft place to start</p>
+            <h2>Your next hour<br><em>is yours.</em></h2>
+            <p>Tell us what you need. We’ll take it from there.</p>
+          </div>
+          <span class="booking-art-orbit" aria-hidden="true"></span>
+        </div>
+        <div class="booking-panel">
+          <p class="eyebrow">Plan a visit</p>
+          <h2>Begin with an enquiry.</h2>
+          <p class="booking-intro">Share your preferences and we’ll prepare an email for the ALBA team. This is not live availability.</p>
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="guestName">Your name</label>
+                <input id="guestName" name="name" autocomplete="name" required placeholder="First and last">
+              </div>
+              <div class="field">
+                <label for="guestEmail">Email address</label>
+                <input id="guestEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label for="guestTreatment">Treatment</label>
+                <select id="guestTreatment" name="treatment" required>
+                  <option value="">Choose a treatment</option>
+                  <option>Help me choose</option>
+                  <option>Massage</option>
+                  <option>Facials</option>
+                  <option>Red-light ritual</option>
+                  <option>Hot-stone ritual</option>
+                  <option>Skin consultation</option>
+                  <option>Restore</option>
+                  <option>The ALBA Ritual</option>
+                  <option>Couples Retreat</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="guestDate">Preferred date</label>
+                <input id="guestDate" name="date" type="date">
+              </div>
+              <div class="field">
+                <label for="guestTime">Preferred time</label>
+                <select id="guestTime" name="time">
+                  <option value="">Flexible / not sure</option>
+                  <option>Morning</option>
+                  <option>Midday</option>
+                  <option>Afternoon</option>
+                  <option>Evening</option>
+                </select>
+              </div>
+              <div class="field field-wide">
+                <label for="guestNote">A note for the spa team <span>(optional)</span></label>
+                <textarea id="guestNote" name="note" rows="3" placeholder="Anything that would help us tailor your visit?"></textarea>
+              </div>
+            </div>
+            <button class="button button-dark" type="submit">Prepare email enquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-note">No appointment has been confirmed. Email <a href="mailto:sierra@recoverrevenue.company">sierra@recoverrevenue.company</a> and wait for a reply.</p>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden>
+              <strong>Your enquiry draft is ready.</strong>
+              <p>Your email app should open with the details. Nothing is booked until you send the email and the spa confirms your visit.</p>
+              <button class="copy-button" id="copyEnquiry" type="button">Copy enquiry text</button>
+              <span class="copy-status" id="copyStatus"></span>
+            </div>
+          </form>
+          <p class="direct-email">Prefer to write directly? <a href="mailto:sierra@recoverrevenue.company">Email the ALBA team ↗</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid wrap">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="ALBA home"><span class="brand-mark" aria-hidden="true">A</span><span class="brand-word">ALBA<small>MASSAGE &amp; WELLNESS</small></span></a>
+        <p>Considered care for the body, the skin, and the space between.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Treatments</a><a href="#rituals">Signature rituals</a><a href="#space">Our space</a><a href="#faq">Good to know</a>
+      </nav>
+      <div class="footer-contact">
+        <p class="eyebrow">Start a conversation</p>
+        <a href="mailto:sierra@recoverrevenue.company">sierra@recoverrevenue.company</a>
+        <p>Appointments by enquiry</p>
+      </div>
+    </div>
+    <div class="footer-bottom wrap"><span>Photography: Unsplash &amp; Pexels · Free photo licenses</span><span>© <span id="year">2026</span> ALBA Massage &amp; Wellness</span></div>
+  </footer>
+</body>
+</html>

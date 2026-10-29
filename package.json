@@ -1,0 +1,13 @@
+{
+  "name": "alba-massage-spa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive luxury wellness website for ALBA Massage & Wellness",
+  "scripts": {
+    "test": "node --test tests/smoke.test.cjs",
+    "serve": "python3 -m http.server 3000 --bind 0.0.0.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.13.0"
+  }
+}
